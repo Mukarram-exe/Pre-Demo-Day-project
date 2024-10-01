@@ -1,0 +1,65 @@
+form {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: black;
+  }
+  
+  p {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 50%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+    margin-left: 10px;
+  }
+  
+  #personalDetailsDiv {
+    margin-bottom: 20px;
+  }
+  #askDiv {
+    margin-bottom: 20px;
+  }
+  #ratings {
+    margin-bottom: 20px;
+  }
+  #suggestion {
+    margin-bottom: 20px;
+  }
+  
+  #ratings div {
+    margin-bottom: 20px;
+  }
+  
+  
+  #suggestion textarea {
+    width: 100%;
+    height: 100px;
+  }
+  hr {
+    border-color: black;
+  }
+  
