@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Intro.css";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+
 function Intro() {
   const navigate = useNavigate()
   return (
