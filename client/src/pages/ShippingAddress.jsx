@@ -3,9 +3,20 @@ import axios from 'axios'; // Make sure the casing is correct
 import "../components/styles/ShippingAddress.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { CartContext } from '../context/CartContext'
+import { useContext } from 'react';
 
 
 function ShippingAddress() {
+
+  const { addToCart } = useContext(CartContext);
+
+  const addToCartHandler =(e)=>{
+    e.preventDefault();
+    console.log("I am clicked");
+    addToCart();
+  }
+
 const navigate = useNavigate();
   const [formData, setFormData] = useState({
     
