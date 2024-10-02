@@ -1,24 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from 'axios'; // Make sure the casing is correct
 import "../components/styles/ShippingAddress.css";
 
 function ShippingAddress() {
+  const [formData, setFormData] = useState({
+    fullname: "",
+    state: "",
+    postal: "",
+    street: "",
+    city: "", 
+    phonenumber: "" 
+  });
+
+  const onChangeHandler = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  }
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+    try {
+      const { data } = await axios.post('http://localhost:5000/shippingdetails', formData);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div>
-      <form>
+      <form onSubmit={onSubmitHandler}>
         <div id="personalDetailsDiv">
           <center>
             <p>Please fill in your details</p>
           </center>
           <hr />
           <p>Enter full name</p>
-          <input type="text" id="name" placeholder="Your full name" />
+          <input onChange={onChangeHandler} type="text" name="fullname" placeholder="Your full name" />
 
           <p>State</p>
-          <input type="text" id="state" placeholder="Your state" />
+          <input onChange={onChangeHandler} name="state" type="text" placeholder="Your state" value={"Telangana"} readOnly/>
+
           <p>Street Address</p>
-          <input type="text" id="name" placeholder="10/45/34-23,Times square" />
+          <input onChange={onChangeHandler} type="text" name="street" placeholder="10/45/34-23, Times square" />
+
           <p>City</p>
-          <select id="city">
+          <select onChange={onChangeHandler} name="city" id="city">
             <option value="">Select City</option>
             <option value="Adilabad">Adilabad</option>
             <option value="Alampur">Alampur</option>
@@ -45,21 +74,23 @@ function ShippingAddress() {
             <option value="Hyderabad">Hyderabad</option>
             <option value="Jagtial">Jagtial</option>
             <option value="Jangaon">Jangaon</option>
-
             <option value="Karimnagar">Karimnagar</option>
             <option value="Khammam">Khammam</option>
             <option value="Warangal">Warangal</option>
           </select>
-          <p>Postal Address</p>
-          <input type="number" id="postalAddress" placeholder="5000001" />
-          <p>Phone Number</p>
 
+          <p>Postal Address</p>
+          <input onChange={onChangeHandler} name="postal" type="number" placeholder="5000001" />
+
+          <p>Phone Number</p>
           <input
+            onChange={onChangeHandler}
             type="tel"
-            name="phoneNumber"
-            id="phoneNumber"
+            name="phoneNumber" // Correct the name to match the state
             placeholder="888 888 888"
           />
+
+          <button type="submit">Submit</button> {/* Set type to submit */}
         </div>
       </form>
     </div>
