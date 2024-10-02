@@ -1,0 +1,39 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 15px; /* Space between product cards */
+    padding: 10px;
+  }
+  
+  /* Each product card styling */
+  .product-item {
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px;
+    max-width: 180px; /* Set a fixed width */
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%; /* Make the image fit the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product-name {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .product-price {
+    color: #b12704; /* Amazon's red price color */
+    font-size: 14px;
+  }
+  
+  .add-to-cart-button {
+    background-color: #ffa41c; /* Amazon's orange button color */
+    border: none;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }

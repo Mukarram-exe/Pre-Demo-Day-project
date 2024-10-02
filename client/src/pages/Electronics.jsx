@@ -9,12 +9,14 @@ import iphone15 from "./images/iphone 15.jpg"
 import DSLR from "./images/DSLR.jpg"
 import AC from "./images/AC.avif"
 import "../components/styles/Electronics.css"
+import Navbar from "../components/Navbar"
 
 
 function Electronics() {
   return (
     <div>
-      <h1>Welcome to the Electronics Page!</h1>
+      <Navbar />
+      <h1 className="heading">Discover new era gadgets!</h1>
       <div className="product-list">
         
         <div className="product-item">

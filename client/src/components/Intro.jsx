@@ -14,9 +14,9 @@ function Intro() {
           <p style={{ fontSize: "50px" }}>Buy your favourite products here</p>
           <hr />
           <div className="button-container">
-            <button className="custom-button">Appliances</button>
-            <button className="custom-button">Furniture</button>
-            <button className="custom-button">Skincare</button>
+            <button className="custom-button" onClick={() => navigate("/appliances")}>Appliances</button>
+            <button className="custom-button" onClick={() => navigate("/furniture")}>Furniture</button>
+            <button className="custom-button" onClick={() => navigate("/skincare")}>Skincare</button>
             <button className="custom-button"  onClick={() => navigate("/electronics")}>Electronics</button>
           </div>
         </div>
