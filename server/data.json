@@ -1,45 +1,45 @@
 [
   {
-    "fullname": "dfsdf",
-    "state": "",
-    "postal": "454534534",
-    "street": "",
-    "city": "Karimnagar",
-    "phonenumber": "",
-    "phoneNumber": "545345434534"
-  },
-  {
-    "fullname": "dfsdf",
-    "state": "",
-    "postal": "454534534",
-    "street": "",
-    "city": "Karimnagar",
-    "phonenumber": "",
-    "phoneNumber": "545345434534"
-  },
-  {
-    "fullname": "dfsdf",
-    "state": "",
-    "postal": "454534534",
-    "street": "",
-    "city": "Karimnagar",
-    "phonenumber": "",
-    "phoneNumber": "545345434534"
+    "fullname": "rizwan khan",
+    "street": "10-2-318/1",
+    "city": "Jangaon",
+    "postal": "5234523454",
+    "phoneNumber": "45345435"
   },
   {
     "fullname": "rizwan khan",
-    "state": "",
-    "postal": "5435344534",
     "street": "5345345",
-    "city": "Hyderabad",
-    "phonenumber": "",
-    "phoneNumber": "4534545"
+    "city": "Khammam",
+    "postal": "542345234",
+    "phoneNumber": "4545345"
   },
   {
     "fullname": "mukarram",
-    "street": "10-2-318/1",
-    "city": "Adilabad",
-    "postal": "445454324324",
-    "phoneNumber": "534534534"
-  }
+    "street": "5345345",
+    "city": "Chandur",
+    "postal": "6566567567",
+    "phoneNumber": "65667"
+  },
+  {
+    "fullname": "rizwan khan",
+    "street": "5345345",
+    "city": "Jagtial",
+    "postal": "3454325",
+    "phoneNumber": "452345345"
+  },
+  {
+    "fullname": "fawaz ",
+    "street": "5345345",
+    "city": "Jagtial",
+    "postal": "4345435",
+    "phoneNumber": "5454543"
+  },
+  {
+    "fullname": "Mohammed Mukarram",
+    "street": "10-2-318/1/32/1,Feroz Gandhi Nagar, beside priya theatre",
+    "city": "Hyderabad",
+    "postal": "500001",
+    "phoneNumber": "9701273500"
+  },
+  {}
 ]
