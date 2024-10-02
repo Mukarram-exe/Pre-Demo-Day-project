@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import axios from 'axios'; // Make sure the casing is correct
 import "../components/styles/ShippingAddress.css";
+import { useNavigate } from "react-router-dom";
 
 function ShippingAddress() {
+const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    fullname: "",
-    state: "",
-    postal: "",
-    street: "",
-    city: "", 
-    phonenumber: "" 
+    
   });
 
   const onChangeHandler = (e) => {
@@ -24,6 +21,8 @@ function ShippingAddress() {
     try {
       const { data } = await axios.post('http://localhost:5000/shippingdetails', formData);
       console.log(data);
+      await navigate("/thankyou")
+      
     } catch (error) {
       console.log(error);
     }
@@ -90,7 +89,7 @@ function ShippingAddress() {
             placeholder="888 888 888"
           />
 
-          <button type="submit">Submit</button> {/* Set type to submit */}
+          <button type="submit" >Submit</button> {/* Set type to submit */}
         </div>
       </form>
     </div>
