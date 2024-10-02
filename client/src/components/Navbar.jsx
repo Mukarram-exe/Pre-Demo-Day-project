@@ -1,19 +1,31 @@
-import React from "react";
+// Navbar.js
+import React, { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 function Navbar() {
+  const { cartCount } = useContext(CartContext);
+
   return (
-    <>
-      <nav class="navbar bg-primary" data-bs-theme="dark">
-        <h1
+    <nav className="navbar bg-primary" data-bs-theme="dark">
+      <h1 style={{ color: 'white', marginLeft: '10px' }}>SnapBuy</h1>
+      <h1>
+        
+        <i className="bi bi-cart3"></i>
+        <input
           style={{
-            color: "white",
-            marginLeft: "10px",
+            width: '65px',
+            backgroundColor: 'transparent',
+            border: 'none',
+            textAlign: 'center',
+            color: 'white',
           }}
-        >
-          SnapBuy
-        </h1>
-      </nav>
-    </>
+          value={cartCount}
+          readOnly
+          className="cart"
+          type="number"
+        />
+      </h1>
+    </nav>
   );
 }
 
