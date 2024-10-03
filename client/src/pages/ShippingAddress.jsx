@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios'; // Make sure the casing is correct
+import axios from 'axios'; 
 import "../components/styles/ShippingAddress.css";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
@@ -47,19 +47,19 @@ const navigate = useNavigate();
       <form onSubmit={onSubmitHandler}>
         <div id="personalDetailsDiv">
           <center>
-            <p>Please fill in your details</p>
+            <p style={{fontSize:"35px"}}>Please fill in your details</p>
           </center>
           <hr />
-          <p>Enter full name</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>Enter full name</p>
           <input onChange={onChangeHandler} type="text" name="fullname" placeholder="Your full name" />
 
-          <p>State</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>State</p>
           <input onChange={onChangeHandler} name="state" type="text" placeholder="Your state" value={"Telangana"} readOnly/>
 
-          <p>Street Address</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>Street Address</p>
           <input onChange={onChangeHandler} type="text" name="street" placeholder="10/45/34-23, Times square" />
 
-          <p>City</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>City</p>
           <select onChange={onChangeHandler} name="city" id="city">
             <option value="">Select City</option>
             <option value="Adilabad">Adilabad</option>
@@ -92,18 +92,21 @@ const navigate = useNavigate();
             <option value="Warangal">Warangal</option>
           </select>
 
-          <p>Postal Address</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>Postal Address</p>
           <input onChange={onChangeHandler} name="postal" type="number" placeholder="5000001" />
 
-          <p>Phone Number</p>
+          <p style={{marginLeft:"15px" , fontSize:"30px"}}>Phone Number</p>
           <input
             onChange={onChangeHandler}
             type="tel"
-            name="phoneNumber" // Correct the name to match the state
+            name="phoneNumber" 
             placeholder="888 888 888"
-          />
+          /> <br />
 
-          <button type="submit" >Submit</button> {/* Set type to submit */}
+          <center>
+            
+            <button type="submit" className="btn btn-primary" style={{marginTop:"5px", marginLeft:"15px"}} >Submit</button> 
+            </center>
         </div>
       </form>
     </div>

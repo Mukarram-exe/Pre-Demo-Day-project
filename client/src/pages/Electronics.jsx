@@ -35,7 +35,8 @@ function Electronics() {
           <p className="product-price">$1,299.99</p>
           <button className="add-to-cart-button" onClick={addToCartHandler}>
           Add to Cart
-        </button>        </div>
+        </button>        
+        </div>
 
         
         <div className="product-item">
@@ -109,6 +110,7 @@ function Electronics() {
           Add to Cart
         </button>        </div>
       </div>
+      
     </div>
   );
 }

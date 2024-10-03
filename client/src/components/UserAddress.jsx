@@ -21,7 +21,6 @@ const UserAddress = () => {
         <h1> Hello {lastUser.fullname}! your order has being placed shipping to address</h1>
      
       <p>{lastUser.street}, {lastUser.city}, Telengana</p>
-      
       <p>Postal Code: {lastUser.postal}</p>
       <p>Phone Number: {lastUser.phoneNumber}</p>
      </center>

@@ -45,6 +45,7 @@ p strong {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .custom-button {
@@ -62,21 +63,4 @@ p strong {
   background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
-  .user-address {
-    padding: 20px;
-    max-width: 90%;
-  }
 
-  h1 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .custom-button {
-    font-size: 16px;
-  }
-}

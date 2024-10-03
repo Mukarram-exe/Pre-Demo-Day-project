@@ -48,5 +48,44 @@
     "city": "Hyderabad",
     "postal": "500008",
     "phoneNumber": "9700153830"
+  },
+  {},
+  {
+    "fullname": "rizwan khan",
+    "street": "5345345",
+    "city": "Karimnagar",
+    "postal": "42345234",
+    "phoneNumber": "453425345234"
+  },
+  {},
+  {
+    "fullname": "Mohammed Mukarram",
+    "street": "10-2-318/1/32/1,Feroz Gandhi Nagar, beside priya theatre",
+    "city": "Khammam",
+    "postal": "500001",
+    "phoneNumber": "9701273500"
+  },
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {
+    "fullname": "Mohammed Mukarram",
+    "street": "10-2-318/1/32/1,Feroz Gandhi Nagar, beside priya theatre",
+    "city": "Hyderabad",
+    "postal": "5000001",
+    "phoneNumber": "9701273500"
+  },
+  {},
+  {
+    "fullname": "Mohammed Mukarram",
+    "street": "10-2-318/1/32/1,Feroz Gandhi Nagar, beside priya theatre",
+    "city": "Hyderabad",
+    "postal": "5000001",
+    "phoneNumber": "9701273500"
   }
 ]

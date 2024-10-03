@@ -24,7 +24,7 @@ form {
   input[type="tel"],
   input[type="number"],
   select {
-    width: 50%;
+    width: 100%;
     padding: 15px;
     margin: 10px;
     border: 1px solid black;
@@ -33,12 +33,4 @@ form {
   
   
   
-  
-  
-
-  
-  
-  hr {
-    border-color: black;
-  }
   

@@ -12,7 +12,7 @@ function Intro() {
         <div id="hello">
           <p style={{ fontSize: "200px", color: "black" }}>Hello!</p>
           <p style={{ fontSize: "50px" }}>Buy your favourite products here</p>
-          <hr />
+  
           <div className="button-container">
             <button className="custom-button" onClick={() => navigate("/appliances")}>Appliances</button>
             <button className="custom-button" onClick={() => navigate("/furniture")}>Furniture</button>
